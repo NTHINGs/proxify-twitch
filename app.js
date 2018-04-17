@@ -19,7 +19,7 @@ app.get('/:channel', function (req, res) {
         console.log(streams);
         for (var stream of streams) {
             if (stream.quality.toLowerCase() == 'source') {
-                res.render('player', { stream, channel: req.params.channel});
+                res.render('player', { stream: stream.url, channel: req.params.channel});
             }
         }
     })
