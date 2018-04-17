@@ -1,6 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var twitchStream = require('twitch-get-stream')('afzhp0rofl3vcedb5lt1si7cdv9m50');
+var path = require('path');
 
 var app = express();
 
