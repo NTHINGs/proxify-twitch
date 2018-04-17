@@ -1,0 +1,30 @@
+{
+  "name": "proxify-twitch",
+  "version": "1.0.0",
+  "description": "Twitch proxy for the corporate one",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NTHINGs/proxify-twitch.git"
+  },
+  "keywords": [
+    "twitch",
+    "proxy"
+  ],
+  "author": "NTHINGs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NTHINGs/proxify-twitch/issues"
+  },
+  "homepage": "https://github.com/NTHINGs/proxify-twitch#readme",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "hls.js": "^0.9.1",
+    "morgan": "^1.9.0",
+    "twitch-get-stream": "^0.4.1"
+  }
+}
