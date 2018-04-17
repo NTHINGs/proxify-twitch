@@ -6,6 +6,7 @@ var app = express();
 
 var port = process.env.PORT || 3000;
 app.use(morgan('dev'));
+app.set('views', path.join(__dirname, '/'));
 app.set('view engine', 'ejs');
 
 app.listen(port, function() {
