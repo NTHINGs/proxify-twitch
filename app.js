@@ -17,7 +17,7 @@ app.listen(port, function() {
 app.get('/:channel', function (req, res) {
     twitchStream.raw(req.params.channel).then(function(streams) {
         console.log(streams);
-        res.render('player', {stream: streams[0]});
+        res.render('player', { stream: streams[0], channel: req.params.channel});
     })
     .catch(function(error){
         console.log(error);
