@@ -17,11 +17,7 @@ app.listen(port, function() {
 app.get('/:channel', function (req, res) {
     twitchStream.get(req.params.channel).then(function(streams) {
         console.log(streams);
-        for (var stream of streams) {
-            if (stream.quality.toLowerCase() == 'source') {
-                res.render('player', { stream: stream.url, channel: req.params.channel});
-            }
-        }
+        res.render('player', { streams, channel: req.params.channel});
     })
     .catch(function(error){
         console.log(error);
