@@ -9,8 +9,8 @@
         <meta name="viewport" content="width=device-width">
     </head>
     <body>
-        <% for(var i=0; i < streams.length; i++) { %>
-            <p><%=streams[i].link%></p>
+        <% for(var stream of streams) { %>
+            <p><%=stream.url%></p>
         <% } %>
     </body>
 </html>
