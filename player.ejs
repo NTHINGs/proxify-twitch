@@ -9,6 +9,8 @@
         <meta name="viewport" content="width=device-width">
     </head>
     <body>
-        <%=JSON.stringify(streams)%>
+        <% for(var stream of streams) { %>
+            <p><%=stream.link%></p>
+        <% } %>
     </body>
 </html>
