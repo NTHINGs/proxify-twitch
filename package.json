@@ -23,6 +23,7 @@
   "dependencies": {
     "ejs": "^2.5.8",
     "express": "^4.16.3",
+    "hls-buffer": "^0.1.5",
     "hls.js": "^0.9.1",
     "morgan": "^1.9.0",
     "twitch-get-stream": "^0.4.1"
